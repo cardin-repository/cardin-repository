@@ -72,7 +72,7 @@
     class="mono main"
     font-size="20"
     font-weight="500"
-  >cardin@GitHub:~$ fastfetch</text>
+  >cardin-repository@GitHub:~$ fastfetch</text>
 
   <!-- CH logo -->
   <text
@@ -84,19 +84,19 @@
     fill="url(#logoGradient)"
     xml:space="preserve"
   >
-    <tspan x="25" dy="0">        %%%######%%%             %#          #%</tspan>
+    <tspan x="25" dy="0">       %%%######%%%            %#          #%</tspan>
     <tspan x="25" dy="29">     %%##========##%%          %#          #%</tspan>
     <tspan x="25" dy="29">   %%#===        ===#%%        %#          #%</tspan>
-    <tspan x="25" dy="29">  %#==              ==#%       %#          #%</tspan>
+    <tspan x="25" dy="29"> %#==              ==#%        %#          #%</tspan>
     <tspan x="25" dy="29"> %#==                 =#%      %#          #%</tspan>
     <tspan x="25" dy="29">%#==                           %#          #%</tspan>
     <tspan x="25" dy="29">%#==                           %############%</tspan>
     <tspan x="25" dy="29">%#==                           %############%</tspan>
-    <tspan x="25" dy="29">%#==                  =#%      %#          #%</tspan>
-    <tspan x="25" dy="29"> %#==                ==#%      %#          #%</tspan>
-    <tspan x="25" dy="29">  %#===            ===#%       %#          #%</tspan>
-    <tspan x="25" dy="29">    %%#==========#%%          %#          #%</tspan>
-    <tspan x="25" dy="29">       %%%######%%%            %#          #%</tspan>
+    <tspan x="25" dy="29">%#==                   =#%     %#          #%</tspan>
+    <tspan x="25" dy="29"> %#==                 ==#%     %#          #%</tspan>
+    <tspan x="25" dy="29">  %#===             ===#%      %#          #%</tspan>
+    <tspan x="25" dy="29">    %%#==========#%%           %#          #%</tspan>
+    <tspan x="25" dy="29">        %%%######%%%            %#          #%</tspan>
   </text>
 
   <!-- Header -->
@@ -107,7 +107,7 @@
     font-size="22"
     font-weight="700"
     fill="url(#headerGradient)"
-  >Cardin@GitHub</text>
+  >cardin-repository@GitHub</text>
 
   <text
     x="650"
