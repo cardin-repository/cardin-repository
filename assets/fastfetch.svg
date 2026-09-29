@@ -1,118 +1,157 @@
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1280 500"
+  width="1280"
+  height="500"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Cardin Ho GitHub fastfetch</title>
+  <desc id="desc">
+    A colorful terminal-style CH logo alongside information about Cardin Ho.
+  </desc>
+
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D76E"/>
+      <stop offset="30%" stop-color="#D6A84B"/>
+      <stop offset="58%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#79C0FF"/>
+    </linearGradient>
+
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6A84B"/>
+      <stop offset="100%" stop-color="#58A6FF"/>
+    </linearGradient>
+  </defs>
+
   <style>
     .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
-                   Consolas, "Liberation Mono", "Courier New", monospace;
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Liberation Mono",
+        "Courier New",
+        monospace;
     }
 
-    .text { fill: #24292f; }
-    .muted { fill: #57606a; }
+    .main {
+      fill: #24292f;
+    }
+
+    .muted {
+      fill: #57606a;
+    }
+
+    .value {
+      fill: #24292f;
+    }
 
     @media (prefers-color-scheme: dark) {
-      .text { fill: #c9d1d9; }
-      .muted { fill: #8b949e; }
+      .main {
+        fill: #c9d1d9;
+      }
+
+      .muted {
+        fill: #8b949e;
+      }
+
+      .value {
+        fill: #f0f6fc;
+      }
     }
   </style>
 
-  <!-- command -->
-  <text x="25" y="30"
-        class="mono text"
-        font-size="18">
-    cardin@GitHub:~$ fastfetch
+  <!-- Terminal command -->
+  <text
+    x="28"
+    y="36"
+    class="mono main"
+    font-size="20"
+    font-weight="500"
+  >cardin@GitHub:~$ fastfetch</text>
+
+  <!-- CH logo -->
+  <text
+    x="25"
+    y="92"
+    class="mono"
+    font-size="21"
+    font-weight="700"
+    fill="url(#logoGradient)"
+    xml:space="preserve"
+  >
+    <tspan x="25" dy="0">        %%%######%%%             %#          #%</tspan>
+    <tspan x="25" dy="29">     %%##========##%%          %#          #%</tspan>
+    <tspan x="25" dy="29">   %%#===        ===#%%        %#          #%</tspan>
+    <tspan x="25" dy="29">  %#==              ==#%       %#          #%</tspan>
+    <tspan x="25" dy="29"> %#==                 =#%      %#          #%</tspan>
+    <tspan x="25" dy="29">%#==                           %#          #%</tspan>
+    <tspan x="25" dy="29">%#==                           %############%</tspan>
+    <tspan x="25" dy="29">%#==                           %############%</tspan>
+    <tspan x="25" dy="29">%#==                  =#%      %#          #%</tspan>
+    <tspan x="25" dy="29"> %#==                ==#%      %#          #%</tspan>
+    <tspan x="25" dy="29">  %#===            ===#%       %#          #%</tspan>
+    <tspan x="25" dy="29">    %%#==========#%%          %#          #%</tspan>
+    <tspan x="25" dy="29">       %%%######%%%            %#          #%</tspan>
   </text>
 
-  <!-- C — yellow -->
-  <text x="25" y="75"
-        class="mono"
-        font-size="19"
-        font-weight="700"
-        fill="#F5C344"
-        xml:space="preserve">
+  <!-- Header -->
+  <text
+    x="650"
+    y="88"
+    class="mono"
+    font-size="22"
+    font-weight="700"
+    fill="url(#headerGradient)"
+  >Cardin@GitHub</text>
 
-    <tspan x="25" dy="0">          %%%####%%%%</tspan>
-    <tspan x="25" dy="27">      %%*=============+%%</tspan>
-    <tspan x="25" dy="27">    %#=======+*****+=====#%</tspan>
-    <tspan x="25" dy="27">   %+=====*%%       %%*===+%</tspan>
-    <tspan x="25" dy="27">  %#====+%             %+==#%</tspan>
-    <tspan x="25" dy="27"> %%====*%               %*==%</tspan>
-    <tspan x="25" dy="27"> %====+%</tspan>
-    <tspan x="25" dy="27">%=====*%</tspan>
-    <tspan x="25" dy="27">%=====+%</tspan>
-    <tspan x="25" dy="27">%=====+%</tspan>
-    <tspan x="25" dy="27"> %%====*%               %*==%</tspan>
-    <tspan x="25" dy="27">  %#====+%             %+==#%</tspan>
-    <tspan x="25" dy="27">   %+=====*%%       %%*===+%</tspan>
-    <tspan x="25" dy="27">    %#=======+*****+=====#%</tspan>
-    <tspan x="25" dy="27">      %%*=============+%%</tspan>
-    <tspan x="25" dy="27">          %%%####%%%%</tspan>
-  </text>
+  <text
+    x="650"
+    y="115"
+    class="mono muted"
+    font-size="18"
+  >------------------------------</text>
 
-  <!-- H — blue -->
-  <text x="335" y="75"
-        class="mono"
-        font-size="19"
-        font-weight="700"
-        fill="#4DA3FF"
-        xml:space="preserve">
+  <!-- Profile information -->
+  <g class="mono" font-size="18">
+    <text x="650" y="150" class="muted">Name:</text>
+    <text x="850" y="150" class="value">Cardin Ho</text>
 
-    <tspan x="335" dy="0">%#**#%         %#**#%</tspan>
-    <tspan x="335" dy="27">%*==*%         %*==*%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%%%%%%%%%%%====%</tspan>
-    <tspan x="335" dy="27">%===================%</tspan>
-    <tspan x="335" dy="27">%====+%%%%%%%+=====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%====%         %====%</tspan>
-    <tspan x="335" dy="27">%*==*%         %*==*%</tspan>
-    <tspan x="335" dy="0">%#**#%         %#**#%</tspan>
-  </text>
+    <text x="650" y="180" class="muted">School:</text>
+    <text x="850" y="180" class="value">Georgia Tech</text>
 
-  <!-- profile -->
-  <g class="mono" font-size="17">
-    <text x="610" y="75" fill="#4DA3FF" font-weight="700">Cardin@GitHub</text>
-    <text x="610" y="101" class="muted">------------------------------</text>
+    <text x="650" y="210" class="muted">Major:</text>
+    <text x="850" y="210" class="value">Computer Science</text>
 
-    <text x="610" y="132" class="muted">Name:</text>
-    <text x="800" y="132" class="text">Cardin Ho</text>
+    <text x="650" y="240" class="muted">Threads:</text>
+    <text x="850" y="240" class="value">AI + Info Internetworks</text>
 
-    <text x="610" y="160" class="muted">School:</text>
-    <text x="800" y="160" fill="#F5C344">Georgia Tech</text>
+    <text x="650" y="270" class="muted">Expected Grad:</text>
+    <text x="850" y="270" class="value">May 2028</text>
 
-    <text x="610" y="188" class="muted">Major:</text>
-    <text x="800" y="188" class="text">Computer Science</text>
+    <text x="650" y="300" class="muted">Currently:</text>
+    <text x="850" y="300" class="value">Software Developer @ GT Esports</text>
 
-    <text x="610" y="216" class="muted">Threads:</text>
-    <text x="800" y="216" class="text">AI + Info Internetworks</text>
+    <text x="650" y="330" class="muted">Building:</text>
+    <text x="850" y="330" class="value">eVALuate</text>
 
-    <text x="610" y="244" class="muted">Expected Grad:</text>
-    <text x="800" y="244" class="text">May 2028</text>
+    <text x="650" y="360" class="muted">Languages:</text>
+    <text x="850" y="360" class="value">Python, Java, C/C++, TypeScript</text>
 
-    <text x="610" y="272" class="muted">Currently:</text>
-    <text x="800" y="272" class="text">Software Developer @ GT Esports</text>
+    <text x="650" y="390" class="muted">Frameworks:</text>
+    <text x="850" y="390" class="value">React, Next.js, Django, FastAPI</text>
 
-    <text x="610" y="300" class="muted">Building:</text>
-    <text x="800" y="300" fill="#4DA3FF">eVALuate</text>
+    <text x="650" y="420" class="muted">Databases:</text>
+    <text x="850" y="420" class="value">PostgreSQL, MySQL, MongoDB</text>
 
-    <text x="610" y="328" class="muted">Languages:</text>
-    <text x="800" y="328" class="text">Python, Java, C/C++, TypeScript</text>
+    <text x="650" y="450" class="muted">Cloud:</text>
+    <text x="850" y="450" class="value">AWS, Supabase, Vercel</text>
 
-    <text x="610" y="356" class="muted">Frameworks:</text>
-    <text x="800" y="356" class="text">React, Next.js, Django, FastAPI</text>
-
-    <text x="610" y="384" class="muted">Databases:</text>
-    <text x="800" y="384" class="text">PostgreSQL, MySQL, MongoDB</text>
-
-    <text x="610" y="412" class="muted">Cloud:</text>
-    <text x="800" y="412" class="text">AWS, Supabase, Vercel</text>
-
-    <text x="610" y="440" class="muted">Tools/Platforms:</text>
-    <text x="800" y="440" class="text">Git, GitHub Actions, REST APIs</text>
+    <text x="650" y="480" class="muted">Tools:</text>
+    <text x="850" y="480" class="value">Git, GitHub Actions, REST APIs</text>
   </g>
 </svg>
